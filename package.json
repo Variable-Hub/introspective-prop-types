@@ -29,7 +29,7 @@
   "main": "lib/index",
   "types": "lib/index",
   "exports": {
-    ".","./lib/index.js",
+    ".": "./lib/index.js",
     "./extra": "./lib/introspective-prop-types-extra.js"
   },
   "scripts": {
