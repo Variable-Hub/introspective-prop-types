@@ -8,12 +8,12 @@
     "url": "git+https://github.com/markalfred/introspective-prop-types.git"
   },
   "bugs": {
-    "url": "https://github.com/markalfred/introspective-prop-types/issues"
+    "url": "https://github.com/Variable-Hub/introspective-prop-types/issues"
   },
-  "homepage": "https://github.com/markalfred/introspective-prop-types",
+  "homepage": "https://github.com/Variable-Hub/introspective-prop-types",
   "author": {
-    "name": "Mark Battersby",
-    "email": "mark.alfred.battersby@gmail.com"
+    "name": "Rick CAudill",
+    "email": "ops@variablehub.com"
   },
   "keywords": [
     "react",
@@ -29,7 +29,7 @@
   "main": "lib/index",
   "types": "lib/index",
   "exports": {
-    "./lib/index.js",
+    ".","./lib/index.js",
     "./extra": "./lib/introspective-prop-types-extra.js"
   },
   "scripts": {
