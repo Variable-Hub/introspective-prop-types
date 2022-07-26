@@ -1,0 +1,24 @@
+export declare const IntrospectivePropTypes: {
+    instanceOf: any;
+    oneOf: any;
+    oneOfType: any;
+    arrayOf: any;
+    objectOf: any;
+    shape: any;
+    exact: any;
+    checkPropTypes: any;
+    resetWarningCache: any;
+    readonly nominalTypeHack: any;
+    readonly any: any;
+    readonly array: any;
+    readonly bool: any;
+    readonly func: any;
+    readonly number: any;
+    readonly object: any;
+    readonly string: any;
+    readonly node: any;
+    readonly element: any;
+    readonly symbol: any;
+    readonly elementType: any;
+};
+export default IntrospectivePropTypes;
