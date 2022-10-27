@@ -13,7 +13,7 @@ function check(
       expect(propType.arg).toBe(undefined)
     })
     it('exposes that it is not required', () => {
-      expect(propType.required).toBe(false)
+      expect(propType.__required).toBe(false)
     })
     describe('.isRequired', () => {
       const requiredPropType = propType.isRequired
@@ -24,7 +24,7 @@ function check(
         expect(requiredPropType.arg).toBe(undefined)
       })
       it('exposes that it is required', () => {
-        expect(requiredPropType.required).toBe(true)
+        expect(requiredPropType.__required).toBe(true)
       })
     })
   } else {
@@ -36,7 +36,7 @@ function check(
       expect(propType.arg).toBe(arg)
     })
     it('exposes that it is not required', () => {
-      expect(propType.required).toBe(false)
+      expect(propType.__required).toBe(false)
     })
     describe('.isRequired', () => {
       const requiredPropType = propType.isRequired
@@ -47,7 +47,7 @@ function check(
         expect(requiredPropType.arg).toBe(arg)
       })
       it('exposes that it is required', () => {
-        expect(requiredPropType.required).toBe(true)
+        expect(requiredPropType.__required).toBe(true)
       })
     })
   }
