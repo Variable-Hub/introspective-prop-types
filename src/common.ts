@@ -21,7 +21,11 @@ function addHiddenProperty<T extends Check | ReqCheck>(
   property: string,
   value: any,
 ): WithProperty<T> {
-  return Object.defineProperty(propType, property, { enumerable: false, value })
+  return Object.defineProperty(propType, property, {
+    configurable: true,
+    enumerable: false,
+    value,
+  })
 }
 
 export function addType<T extends Check>(
@@ -39,10 +43,9 @@ export function addArg<T extends Check>(
 }
 
 export function addRequired<T extends Check>(propType: T): WithProperty<T> {
+  addHiddenProperty(propType, '__required', false)
   if (propType.isRequired) {
     addHiddenProperty(propType.isRequired, '__required', true)
-  } else {
-    addHiddenProperty(propType, '__required', false)
   }
   return propType
 }
